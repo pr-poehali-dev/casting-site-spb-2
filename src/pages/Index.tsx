@@ -11,7 +11,7 @@ const Index = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Icon name="Camera" className="h-8 w-8" />
-            <h1 className="text-3xl font-bold tracking-tight">Кастинги СПб</h1>
+            <h1 className="text-3xl font-bold tracking-tight">Фотограф СПб</h1>
           </div>
           <div className="flex items-center gap-4">
             <a 
@@ -34,97 +34,113 @@ const Index = () => {
       <main className="container mx-auto py-8 px-6">
         {/* Заголовок страницы */}
         <div className="border-b-2 border-black pb-4 mb-8">
-          <h2 className="text-4xl font-bold text-center">ПОИСК АКТЁРОВ, МОДЕЛЕЙ, ТАЛАНТОВ В САНКТ-ПЕТЕРБУРГЕ</h2>
+          <h2 className="text-4xl font-bold text-center">ПОИСК МОДЕЛЕЙ ДЛЯ ТВОРЧЕСКИХ ПРОЕКТОВ В САНКТ-ПЕТЕРБУРГЕ</h2>
           <p className="text-center mt-2 text-lg">Обновлено: 6 мая 2025 г.</p>
         </div>
 
-        {/* Актуальные кастинги */}
+        {/* Объявление о поиске моделей */}
         <section className="mb-12">
-          <h3 className="text-2xl font-bold border-b border-black pb-2 mb-4">АКТУАЛЬНЫЕ КАСТИНГИ</h3>
-          
-          <div className="grid gap-6">
-            <article className="border-b border-gray-300 pb-4">
-              <h4 className="text-xl font-bold">Требуются актёры для съёмок в историческом фильме</h4>
-              <p className="text-sm mb-2">Опубликовано: 5 мая 2025 г.</p>
-              <p className="mb-2">Кинокомпания "Северная звезда" ищет актёров от 25 до 45 лет для съёмок в историческом фильме о жизни Петра I. Требуется опыт работы в кино или театре. Съёмки пройдут в Санкт-Петербурге и пригородах в летний период.</p>
-              <Button variant="link" className="p-0 text-black hover:text-gray-700">
-                <Link to="/casting/1">Читать подробнее →</Link>
-              </Button>
-            </article>
-
-            <article className="border-b border-gray-300 pb-4">
-              <h4 className="text-xl font-bold">Кастинг на роли в рекламе банка</h4>
-              <p className="text-sm mb-2">Опубликовано: 4 мая 2025 г.</p>
-              <p className="mb-2">Рекламное агентство проводит кастинг на роли в рекламе крупного российского банка. Требуются мужчины и женщины 30-50 лет с деловой внешностью. Опыт не обязателен. Съёмки в июне, один съёмочный день, оплата 15 000 рублей.</p>
-              <Button variant="link" className="p-0 text-black hover:text-gray-700">
-                <Link to="/casting/2">Читать подробнее →</Link>
-              </Button>
-            </article>
-
-            <article className="border-b border-gray-300 pb-4">
-              <h4 className="text-xl font-bold">Модели для показа одежды петербургских дизайнеров</h4>
-              <p className="text-sm mb-2">Опубликовано: 3 мая 2025 г.</p>
-              <p className="mb-2">Объединение "Петербургская мода" приглашает моделей для участия в сезонном показе одежды местных дизайнеров. Требования: рост от 175 см для женщин и от 185 см для мужчин, параметры близкие к модельным, опыт дефиле.</p>
-              <Button variant="link" className="p-0 text-black hover:text-gray-700">
-                <Link to="/casting/3">Читать подробнее →</Link>
-              </Button>
-            </article>
-          </div>
-          
-          <div className="mt-6 text-center">
-            <Button className="bg-black hover:bg-gray-800">
-              <Link to="/castings">Смотреть все кастинги</Link>
-            </Button>
-          </div>
-        </section>
-
-        {/* Информация о кастингах в СПб */}
-        <section className="mb-12">
-          <h3 className="text-2xl font-bold border-b border-black pb-2 mb-4">О КАСТИНГАХ В САНКТ-ПЕТЕРБУРГЕ</h3>
+          <h3 className="text-2xl font-bold border-b border-black pb-2 mb-4">ПРИГЛАШАЮ МОДЕЛЕЙ НА ТФП СЪЁМКИ</h3>
           
           <div className="prose max-w-none">
-            <p>Санкт-Петербург — культурная столица России и один из центров кинопроизводства. Каждый год здесь проходят съёмки десятков фильмов, сериалов, рекламных роликов и других проектов, требующих участия актёров, моделей и талантливых людей разных возрастов и типажей.</p>
+            <p className="text-lg">Ищу моделей для участия в творческих проектах на условиях TFP (Time for Photos). Планирую съёмки музыкальных роликов, короткометражных фильмов и фотосессий в различных локациях Санкт-Петербурга.</p>
             
-            <p>На нашей платформе мы собираем актуальные кастинги Санкт-Петербурга от проверенных кинокомпаний, продюсерских центров, рекламных агентств и других организаторов. Мы стремимся обеспечить максимально полную и достоверную информацию, чтобы помочь талантам найти работу, а организаторам проектов — подходящих исполнителей.</p>
-            
-            <p>Особенности кастингов в Санкт-Петербурге:</p>
-            <ul>
-              <li>Большое количество исторических проектов, благодаря уникальной архитектуре и атмосфере города</li>
-              <li>Высокий уровень конкуренции из-за наличия нескольких театральных вузов</li>
-              <li>Сезонность предложений (пик активности приходится на весну и лето)</li>
-              <li>Разнообразие проектов: от крупных международных фильмов до независимых авторских работ</li>
+            <h4 className="text-xl font-bold mt-6">Требования к моделям:</h4>
+            <ul className="list-disc pl-6 mb-6">
+              <li>Возраст от 18 лет</li>
+              <li>Славянский тип внешности</li>
+              <li>Стройное телосложение</li>
+              <li>Длинные волосы</li>
+              <li>Светлые глаза</li>
+              <li>Обаяние и умение работать на камеру</li>
+              <li>Ответственность и пунктуальность</li>
             </ul>
             
-            <p>Для успешного участия в кастингах в Санкт-Петербурге необходимо иметь актуальное портфолио, быть готовым к быстрому отклику на предложения и следить за новыми объявлениями на нашем сайте.</p>
+            <h4 className="text-xl font-bold mt-6">Что предлагаю:</h4>
+            <ul className="list-disc pl-6 mb-6">
+              <li>Профессиональные фотографии и видеоматериалы для вашего портфолио</li>
+              <li>Участие в креативных проектах с возможностью добавить в своё резюме</li>
+              <li>Комфортную атмосферу на съёмочной площадке</li>
+              <li>Помощь в позировании и раскрытии вашего потенциала</li>
+              <li>Гибкий график съёмок (возможность выбора удобного для вас времени)</li>
+            </ul>
             
-            <Button variant="link" className="p-0 text-black hover:text-gray-700">
-              <Link to="/about">Подробнее о кастингах в Санкт-Петербурге →</Link>
+            <h4 className="text-xl font-bold mt-6">Планируемые проекты:</h4>
+            <ul className="list-disc pl-6 mb-6">
+              <li>Съёмки музыкальных видеоклипов в городских локациях</li>
+              <li>Короткометражные художественные фильмы</li>
+              <li>Концептуальные фотосессии в различных стилях</li>
+              <li>Портретные и fashion съёмки</li>
+            </ul>
+            
+            <div className="bg-white border border-black p-4 my-6">
+              <h4 className="text-lg font-bold">Как принять участие:</h4>
+              <p>Для участия в съёмках необходимо отправить свои фотографии (портрет и в полный рост) и краткую информацию о себе (возраст, рост, опыт, если есть) в Telegram:</p>
+              <a 
+                href="https://t.me/vocoders" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 mt-2 hover:underline"
+              >
+                <Icon name="Send" className="h-4 w-4" />
+                <span>t.me/vocoders</span>
+              </a>
+            </div>
+            
+            <p className="text-lg">Все съёмки проходят в дружественной, профессиональной обстановке. Вы получите ценный опыт работы на камеру и качественные материалы для своего портфолио.</p>
+            
+            <Button className="bg-black hover:bg-gray-800 mt-4">
+              <Link to="/contacts">Связаться для участия</Link>
             </Button>
           </div>
         </section>
 
-        {/* Рекомендации */}
+        {/* О проектах */}
+        <section className="mb-12">
+          <h3 className="text-2xl font-bold border-b border-black pb-2 mb-4">О МОИХ ПРОЕКТАХ</h3>
+          
+          <div className="prose max-w-none">
+            <p>Я занимаюсь созданием авторских творческих проектов в Санкт-Петербурге: от музыкальных клипов до короткометражных фильмов. В своих работах стремлюсь передать красоту и атмосферу города, а также раскрыть индивидуальность каждой модели.</p>
+            
+            <p>За плечами более 5 лет опыта в фото- и видеосъёмке. Мои работы принимали участие в локальных выставках и фестивалях. Сотрудничаю с начинающими музыкантами и творческими коллективами Санкт-Петербурга.</p>
+            
+            <p>Ключевые направления работы:</p>
+            <ul>
+              <li>Атмосферные музыкальные видео в городских локациях</li>
+              <li>Короткометражные художественные фильмы</li>
+              <li>Концептуальные фотосессии в различных жанрах</li>
+            </ul>
+            
+            <p>Для каждого проекта подбираю уникальные локации, которые подчёркивают концепцию работы и помогают создать нужную атмосферу. Среди любимых мест для съёмок — исторический центр Петербурга, крыши, набережные, заброшенные индустриальные объекты, а также пригороды с их дворцово-парковыми ансамблями.</p>
+            
+            <Button variant="link" className="p-0 text-black hover:text-gray-700">
+              <Link to="/about">Подробнее о проектах →</Link>
+            </Button>
+          </div>
+        </section>
+
+        {/* Советы для моделей */}
         <section>
-          <h3 className="text-2xl font-bold border-b border-black pb-2 mb-4">СОВЕТЫ ДЛЯ УСПЕШНОГО ПРОХОЖДЕНИЯ КАСТИНГА</h3>
+          <h3 className="text-2xl font-bold border-b border-black pb-2 mb-4">СОВЕТЫ ДЛЯ НАЧИНАЮЩИХ МОДЕЛЕЙ</h3>
           
           <div className="grid gap-4">
             <div className="border-b border-gray-300 pb-2">
-              <h4 className="font-bold">1. Подготовьте профессиональное портфолио</h4>
-              <p>Качественные фотографии и видеоматериалы значительно повышают шансы на получение роли.</p>
+              <h4 className="font-bold">1. Подготовьтесь к съёмке заранее</h4>
+              <p>Выспитесь, избегайте алкоголя накануне, позаботьтесь о коже и волосах.</p>
             </div>
             
             <div className="border-b border-gray-300 pb-2">
-              <h4 className="font-bold">2. Будьте пунктуальны</h4>
-              <p>Опоздание на кастинг может стать причиной отказа, даже если вы идеально подходите на роль.</p>
+              <h4 className="font-bold">2. Возьмите с собой несколько образов</h4>
+              <p>Разнообразные наряды помогут создать больше интересных кадров.</p>
             </div>
             
             <div className="border-b border-gray-300 pb-2">
-              <h4 className="font-bold">3. Следуйте указаниям в описании кастинга</h4>
-              <p>Внимательно читайте требования к внешнему виду, одежде и другим параметрам.</p>
+              <h4 className="font-bold">3. Не бойтесь экспериментировать</h4>
+              <p>Лучшие кадры часто получаются при спонтанных движениях и эмоциях.</p>
             </div>
             
             <Button variant="link" className="p-0 text-black hover:text-gray-700">
-              <Link to="/tips">Все советы для успешного прохождения кастингов →</Link>
+              <Link to="/tips">Все советы для начинающих моделей →</Link>
             </Button>
           </div>
         </section>
@@ -135,11 +151,11 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h4 className="text-xl font-bold mb-4">Кастинги СПб</h4>
-              <p>Ваш надёжный источник информации о кастингах в Санкт-Петербурге.</p>
+              <h4 className="text-xl font-bold mb-4">Фотограф СПб</h4>
+              <p>Творческие проекты и сотрудничество с моделями в Санкт-Петербурге.</p>
               <div className="mt-4 flex items-center gap-2">
                 <Icon name="Camera" className="h-6 w-6" />
-                <span className="text-lg font-bold">Кастинги СПб</span>
+                <span className="text-lg font-bold">Фотограф СПб</span>
               </div>
             </div>
             
@@ -147,16 +163,15 @@ const Index = () => {
               <h4 className="text-xl font-bold mb-4">Разделы сайта</h4>
               <ul className="space-y-2">
                 <li><Link to="/" className="hover:underline">Главная</Link></li>
-                <li><Link to="/castings" className="hover:underline">Все кастинги</Link></li>
-                <li><Link to="/tips" className="hover:underline">Советы</Link></li>
-                <li><Link to="/about" className="hover:underline">О кастингах в СПб</Link></li>
+                <li><Link to="/about" className="hover:underline">О проектах</Link></li>
+                <li><Link to="/tips" className="hover:underline">Советы моделям</Link></li>
                 <li><Link to="/contacts" className="hover:underline">Контакты</Link></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="text-xl font-bold mb-4">Связаться с нами</h4>
-              <p>Появились вопросы или нужна помощь?</p>
+              <h4 className="text-xl font-bold mb-4">Связаться со мной</h4>
+              <p>Хотите принять участие в проекте или узнать подробности?</p>
               <a 
                 href="https://t.me/vocoders" 
                 target="_blank" 
@@ -170,7 +185,7 @@ const Index = () => {
           </div>
           
           <div className="mt-8 pt-4 border-t border-gray-700 text-center">
-            <p>© 2025 Кастинги СПб. Все права защищены.</p>
+            <p>© 2025 Фотограф СПб. Все права защищены.</p>
           </div>
         </div>
       </footer>

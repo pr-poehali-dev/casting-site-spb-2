@@ -1,10 +1,15 @@
 
-import { type Config } from "tailwindcss";
-import tailwindTypography from "@tailwindcss/typography";
+import type { Config } from "tailwindcss";
 
-export default {
+const config = {
   darkMode: ["class"],
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}',
+  ],
+  prefix: "",
   theme: {
     container: {
       center: true,
@@ -15,7 +20,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ['Georgia', 'Times New Roman', 'serif'],
+        'serif': ['Georgia', 'Times New Roman', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -54,12 +59,16 @@ export default {
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+          "border": "hsl(var(--sidebar-border))",
+          "ring": "hsl(var(--sidebar-ring))",
+          "primary": {
+            DEFAULT: "hsl(var(--sidebar-primary))",
+            foreground: "hsl(var(--sidebar-primary-foreground))",
+          },
+          "accent": {
+            DEFAULT: "hsl(var(--sidebar-accent))",
+            foreground: "hsl(var(--sidebar-accent-foreground))",
+          },
         },
       },
       borderRadius: {
@@ -69,29 +78,21 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: "0", opacity: "0" },
-          to: { height: "var(--radix-accordion-content-height)", opacity: "1" },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-            opacity: "1",
-          },
-          to: { height: "0", opacity: "0" },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
-      typography: (theme: any) => ({
-        DEFAULT: {
-          css: {
-            maxWidth: '85ch',
-          },
-        },
-      }),
     },
   },
-  plugins: [tailwindTypography, require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config;
+
+export default config;
